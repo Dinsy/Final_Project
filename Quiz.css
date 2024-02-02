@@ -1,0 +1,18 @@
+/* TaskPage.css */
+.scenario-container {
+  margin-bottom: 20px;
+  margin-left: auto;
+  /* Centers the container */
+  margin-right: auto;
+  /* Centers the container */
+  max-width: 80%;
+  /* Adjust the width as needed */
+  background-color: #ffffff;
+  /* White background for the inside */
+  border: 4px solid #5ada86;
+  /* Green border */
+  border-radius: 10px;
+  /* Smoothed corners */
+  padding: 20px;
+  /* Padding inside the container */
+}

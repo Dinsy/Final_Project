@@ -1,0 +1,126 @@
+/* Page Colour */
+body {
+  background-color: rgb(241, 241, 241);
+  /* Light gray background color for the whole page */
+  font-family: Arial, Helvetica, sans-serif;
+  /* Default font family for the page */
+}
+
+/* Top title area */
+h1 {
+  text-align: center;
+  /* Center aligns the text */
+  margin-bottom: 10px;
+  /* Space below the title */
+  margin-top: -80px;
+  /* Negative top margin to move the title upwards */
+  color: #5ada86;
+  /* Light green color for the title */
+  font-size: xxx-large;
+  /* Extra large font size for the title */
+  text-shadow:
+    /* Adds shadow to the text for a 3D effect */
+    -1px -1px 0 #000,
+    /* Shadow to the top-left */
+    1px -1px 0 #000,
+    /* Shadow to the top-right */
+    -1px 1px 0 #000,
+    /* Shadow to the bottom-left */
+    1px 1px 0 #000;
+  /* Shadow to the bottom-right */
+}
+
+.header-section {
+  background-color: rgb(241, 241, 241);
+  /* Background color for the header section */
+  padding-top: 10px;
+  /* Top padding for the header */
+  padding-bottom: 1px;
+  /* Bottom padding for the header */
+}
+
+/* If you want to vertically center the title in a specific part of the page */
+.logo {
+  width: 100px;
+  /* Adjust the width as needed for the logo */
+}
+
+/* Nav BAR */
+nav {
+  background-color: #01d449;
+  /* Green background for the navigation bar */
+  padding: 10px;
+  /* Padding inside the nav bar */
+  text-align: center;
+  /* Center aligns the text or items in the nav bar */
+}
+
+nav ul {
+  display: flex;
+  /* Uses flexbox for layout */
+  justify-content: space-around;
+  /* Evenly spaces the items with space around them */
+  list-style-type: none;
+  /* Removes default list styling */
+  padding: 0;
+  /* Removes default padding */
+}
+
+nav ul li {
+  display: inline;
+  /* Display list items in a line */
+}
+
+nav ul li a {
+  text-decoration: none;
+  /* Removes underline from links */
+  color: #000000;
+  /* Black text color for links */
+  font-size: 20px;
+  /* Font size for links */
+  transition: color 0.3s, transform 0.3s;
+  /* Transition effect for hover changes */
+  font-weight: bold;
+  /* Bold font weight for links */
+  padding: 10px 20px;
+  /* Padding around links */
+  display: inline-block;
+  /* Display as block elements but in a line */
+}
+
+nav ul li a.active {
+  color: rgb(255, 255, 255);
+  /* White text color for active link */
+  background-color: #1b6939;
+  /* Darker green background for active link */
+}
+
+nav ul li a:hover {
+  color: rgb(255, 255, 255);
+  /* White text color on hover */
+  background-color: #1b6939;
+  /* Darker green background on hover */
+  transform: scale(1.05);
+  /* Slightly scale up the link on hover */
+}
+
+/* H2 headers */
+h2 {
+  text-align: center;
+  /* Center aligns the H2 headers */
+}
+
+/* Footer of the page, contact details */
+footer {
+  text-align: center;
+  /* Center aligns the text in the footer */
+  padding: 20px;
+  /* Padding inside the footer */
+  margin-top: 40px;
+  /* Margin above the footer */
+}
+
+footer p {
+  margin: 0;
+  /* Removes default margin from paragraphs in the footer */
+}

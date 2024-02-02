@@ -1,0 +1,157 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* Align content to the top of the container */
+    width: 100vw;
+    /* Use viewport width for full screen width */
+    height: 100vh;
+    /* Use viewport height for full screen height */
+}
+
+.task_input {
+    width: 80%;
+    /* 20% smaller width */
+    padding: 10px 15px;
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Includes padding and border in the element's total width and height */
+}
+
+.task-item {
+    display: flex;
+    flex-direction: row;
+    /* Keep buttons to the left */
+    justify-content: space-between;
+    /* Space between description and buttons */
+    background-color: #ffffff;
+    /* White background for the inside */
+    border: 4px solid #5ada86;
+    /* Green border */
+    border-radius: 10px;
+    /* Smoothed corners */
+    color: black;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    width: 100%;
+    /* Full width of its container */
+    box-sizing: border-box;
+    align-items: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+/* Existing CSS ... */
+.task-item.completed .task-desc {
+    text-decoration: line-through;
+    text-decoration-color: rgb(134, 134, 134);
+    /* Make the line black */
+    text-decoration-thickness: 4px;
+    /* Make the line thicker */
+}
+
+.task-item div {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    /* Allows the container to grow as needed */
+}
+
+.task-desc {
+    flex-grow: 1;
+    /* Allows the task description to expand with content */
+    margin-right: 10px;
+    /* Space between the description and the buttons */
+    word-break: break-word;
+    /* Ensures long words do not overflow */
+}
+
+.task-button {
+    flex-shrink: 0;
+    /* Prevents buttons from shrinking */
+    padding: 10px 12px;
+    /* Smaller padding */
+    font-size: 0.9em;
+    /* Smaller font size, adjust as needed */
+}
+
+.task-text {
+    text-decoration: line-through;
+}
+
+button {
+    padding: 5px 8px;
+    /* Smaller padding */
+    background-color: #01d449;
+    color: black;
+    border: none;
+    font-size: 0.9em;
+    /* Smaller font size */
+}
+
+.task-button:hover {
+    background-color: #1b6939;
+    color: white;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    border-color: #01d449;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 30px;
+    /* Adjust based on your bar's height */
+    color: white;
+}
+
+/* Drop down menu */
+.select-dropdown {
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.task-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar,
+.progress-percentage,
+.task-filter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    /* Spacing below each element */
+}
+
+.task-input-container {
+    display: flex;
+    /* Use flexbox to lay out children inline */
+    justify-content: center;
+    /* Center the children horizontally */
+    align-items: center;
+    /* Align the children vertically */
+    margin: 10px 0;
+    /* Add some margin for spacing */
+}
+
+.task-filter {
+    margin-left: 10px;
+    /* Add space between the button and the dropdown */
+    /* Other styles as needed */
+}

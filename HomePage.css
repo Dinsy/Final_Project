@@ -1,0 +1,83 @@
+.quote-container {
+  margin-bottom: 20px;
+  margin-left: auto;
+  /* Centers the container */
+  margin-right: auto;
+  /* Centers the container */
+  max-width: 80%;
+  /* Adjust the width as needed */
+  background-color: #ffffff;
+  /* White background for the inside */
+  border: 4px solid #5ada86;
+  /* Green border */
+  border-radius: 10px;
+  /* Smoothed corners */
+  padding: 20px;
+  /* Padding inside the container */
+}
+
+.article-container {
+  margin-bottom: 20px;
+  margin-left: auto;
+  /* Centers the container */
+  margin-right: auto;
+  /* Centers the container */
+  max-width: 80%;
+  /* Adjust the width as needed */
+  background-color: #ffffff;
+  /* White background for the inside */
+  border: 4px solid #5ada86;
+  /* Green border */
+  border-radius: 10px;
+  /* Smoothed corners */
+  padding: 20px;
+  /* Padding inside the container */
+}
+
+.article-container h3 {
+  text-align: center;
+  /* Centers the text */
+  margin-top: 0;
+  /* Adjusts the top margin */
+  margin-bottom: 20px;
+  /* Adjusts the bottom margin, can be changed as needed */
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+}
+
+.content-container img {
+  width: 350px;
+  /* Adjust as needed */
+  height: 350px;
+  margin-right: 20px;
+}
+
+/* .content-container p  */
+.read-more-button {
+  display: inline-block;
+  background-color: #5ada86;
+  /* Button color */
+  color: black;
+  /* Text color */
+  padding: 10px 20px;
+  /* Button padding */
+  margin-left: 30%;
+  text-align: center;
+  text-decoration: none;
+  /* Remove underline from links */
+  border-radius: 5px;
+  /* Rounded corners */
+  font-size: 16px;
+  /* Text size */
+  font-weight: bold;
+}
+
+.read-more-button:hover {
+  background-color: #1b6939;
+  /* Darker background on hover */
+  color: white;
+  /* Text color */
+}

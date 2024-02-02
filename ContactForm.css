@@ -1,0 +1,109 @@
+/* contact page css */
+/* email */
+.contact-form input[type="email"] {
+  width: calc(100% - 20px);
+  /* Adjust width to account for padding */
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  /* Include padding and border in the width */
+}
+
+/* Drop down option  */
+.custom-dropdown {
+  position: relative;
+  /* Needed for absolute positioning of options */
+  width: 100%;
+  /* Match width of email input */
+  padding: 10px;
+  /* Similar padding */
+  margin-bottom: 20px;
+  /* Space after the dropdown */
+  border: 1px solid #ddd;
+  /* Similar border */
+  border-radius: 5px;
+  /* Rounded corners */
+  background-color: white;
+  /* Background color */
+  color: #333;
+  /* Text color */
+  cursor: pointer;
+  /* Cursor style */
+}
+
+.contact-form input[type="email"]:focus {
+  border-color: #01d449;
+  outline: none;
+  /* Remove the default focus outline */
+}
+
+/* Style for the dropdown options */
+.dropdown-options {
+  position: absolute;
+  /* Position options relative to the dropdown */
+  width: calc(100% - 20px);
+  /* Adjust for padding */
+  box-sizing: border-box;
+  /* Include padding and border in the width */
+  background-color: white;
+  /* Background color for options */
+  border-radius: 5px;
+  /* Rounded corners for options */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  /* Optional: add shadow for dropdown */
+}
+
+.dropdown-options li {
+  box-sizing: border-box;
+  /* Include padding and border in the width */
+  padding: 10px;
+  /* Padding inside options */
+  list-style: none;
+  /* Remove default list styling */
+}
+
+.dropdown-options li:hover {
+  background-color: #01d449;
+}
+
+/* Comment box desgin */
+.contact-form textarea {
+  width: calc(100% - 20px);
+  /* Make the textarea expand to the full width of its container */
+  height: 200px;
+  /* Set an initial height for the textarea (adjust as needed) */
+  padding: 10px;
+  /* Add padding for better readability */
+  margin-bottom: 20px;
+  /* Add some space between the comment box and other elements */
+  border: 1px solid #ddd;
+  /* Add a border */
+  border-radius: 5px;
+  /* Add rounded corners */
+  resize: vertical;
+  /* Allow vertical resizing */
+}
+
+.contact-form textarea:focus {
+  border-color: #01d449;
+  outline: none;
+  /* Remove the default focus outline */
+}
+
+/*submit button  */
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #01d449;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+.contact-form button:hover {
+  background-color: #1b6939;
+  color: white;
+}
