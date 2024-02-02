@@ -27,11 +27,20 @@ const Quiz_Two = () => {
                 <button onClick={() => handleOptionChange('D')}>D: "I think we should just try to keep things normal for as long as possible. Mom wouldn't want us to fuss over her."</button>
                 <button onClick={() => handleOptionChange('E')}>E: "I'm not ready to talk about this yet. Let's just deal with it as it comes."</button>
             </div>
-            {selectedOption && (
-                isCorrect ?
-                    <p>Well Done, That is Correct!</p> :
-                    <p>That's not quite right, Try again!</p>
-            )}
+            <div classname="correct">
+                {selectedOption && (
+                    isCorrect ?
+                        <><h2>Well Done, A is the best approach!</h2>
+                            <h3>Explanation:</h3>
+                            <p>Option A is the most compassionate and effective approach. It acknowledges the emotional impact of the situation and the importance of working together as a family. It emphasizes the need to consider your mother's wishes and the importance of open communication and mutual support among siblings.</p>
+                            <h3>Why Other Options Are Not Ideal:</h3>
+                            <p><b>Option B</b> promotes emotional suppression, which can be unhealthy and counterproductive.</p>
+                            <p><b>Option C</b> rushes into practical matters without addressing the emotional impact on the family.</p>
+                            <p><b>Option D</b> potentially ignores the reality of the situation and the need for preparation and open communication.</p>
+                            <p><b>Option E</b> represents avoidance, which can lead to unpreparedness and added stress later on.</p></>
+                        : <h3>That's not quite right, Try again!</h3>
+                )}
+            </div>
 
         </div>
     );
