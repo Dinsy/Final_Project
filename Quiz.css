@@ -1,18 +1,30 @@
 /* TaskPage.css */
-.scenario-container {
-  margin-bottom: 20px;
-  margin-left: auto;
-  /* Centers the container */
-  margin-right: auto;
-  /* Centers the container */
-  max-width: 80%;
-  /* Adjust the width as needed */
-  background-color: #ffffff;
-  /* White background for the inside */
-  border: 4px solid #5ada86;
-  /* Green border */
-  border-radius: 10px;
-  /* Smoothed corners */
-  padding: 20px;
-  /* Padding inside the container */
+.scenario-button {
+  background-color: #4CAF50;
+  /* Green background */
+  color: white;
+  /* White text */
+  padding: 10px 20px;
+  /* Padding around the text */
+  margin: 16px 10px;
+  /* Space between the buttons */
+  border: none;
+  /* No border */
+  cursor: pointer;
+  /* Mouse pointer on hover */
+  display: inline-block;
+  /* Inline block level elements */
+  transition: 0.3s;
+  /* Transition for the hover effect */
+  text-align: center;
+  /* Center the text inside */
+  text-decoration: none;
+  /* No underline on text */
+  font-size: 16px;
+  /* Font size */
+}
+
+.scenario-button:hover {
+  background-color: #000000;
+  /* Darker green background on hover */
 }
