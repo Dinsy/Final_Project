@@ -9,7 +9,7 @@ const Quiz_One = () => {
         setSelectedOption(option);
 
         // Check if the answer is correct (assuming the correct answer is 'C')
-        if (option === 'C') {
+        if (option === 'A') {
             setIsCorrect(true);
         } else {
             setIsCorrect(false);
@@ -27,14 +27,24 @@ const Quiz_One = () => {
                 <button onClick={() => handleOptionChange('D')}>D: "I heard about this miracle cure online; you should check it out instead of giving in to despair."</button>
                 <button onClick={() => handleOptionChange('E')}>E: Quickly assure Alex that everything will be fine and then change the subject to avoid the discomfort of the topic.</button>
             </div>
-            {selectedOption && (
-                isCorrect ?
-                    <p>Well Done, That is Correct!</p> :
-                    <p>That's not quite right, Try again!</p>
-            )}
-
+            <div classname="correct">
+                {selectedOption && (
+                    isCorrect ?
+                        <><h2>Well Done, A is the best approach!</h2>
+                            <h3>Explanation:</h3>
+                            <p>Option A is the best approach as it shows empathy and understanding. It acknowledges the seriousness of Alex's situation and offers emotional and practical support without making assumptions or offering unsolicited advice.</p>
+                            <h3>Why Other Options Are Not Ideal:</h3>
+                            <p><b>Option B</b> is dismissive of Alex's current life and job, which may still hold significant meaning for them.</p>
+                            <p><b>Option C</b> disregards Alex's emotional state and the gravity of their diagnosis, suggesting a distraction rather than addressing the real issue.</p>
+                            <p><b>Option D</b> potentially gives false hope and overlooks the need for emotional support.</p>
+                            <p><b>Option E</b> shows a lack of willingness to engage in a difficult but important conversation, offering superficial reassurance instead.</p></>
+                        : <h3>That's not quite right, Try again!</h3>
+                )}
+            </div>
         </div>
     );
 };
+
+export default Quiz_One;
 
 export default Quiz_One;
