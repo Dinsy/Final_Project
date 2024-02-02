@@ -1,1 +1,23 @@
-/* TaskPage.css */
+/* Scenario.css */
+.button_scen {
+    width: 300px;
+    /* Set width, slightly smaller than .button-link */
+    height: 85px;
+    /* Set height, slightly larger than .button-link */
+    padding: 15px 20px;
+    /* Set padding, top/bottom less than .button-link, left/right same */
+    margin: 15px;
+    /* Same margin as .button-link */
+    background-color: #8dc9a1;
+    /* Different background color for this button */
+    color: rgb(107, 107, 107);
+    /* Different text color for this button */
+    border-radius: 5px;
+    /* Same border-radius as .button-link */
+    border: none;
+    /* No border, same as .button-link */
+    cursor: pointer;
+    /* Same cursor style as .button-link */
+    font-size: large;
+    /* Font size is large but smaller than .button-link */
+}

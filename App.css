@@ -110,17 +110,31 @@ h2 {
   /* Center aligns the H2 headers */
 }
 
-/* Footer of the page, contact details */
-footer {
+/* He headers */
+h3 {
   text-align: center;
-  /* Center aligns the text in the footer */
-  padding: 20px;
-  /* Padding inside the footer */
-  margin-top: 40px;
-  /* Margin above the footer */
+  /* Center aligns the H2 headers */
+  color: #000000;
 }
 
-footer p {
+
+/* Footer of the page, contact details */
+
+html,
+body {
+  height: 100%;
   margin: 0;
-  /* Removes default margin from paragraphs in the footer */
+}
+
+.content {
+  min-height: calc(100% - 40px);
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  margin-top: auto;
+  /* Optional: Add background and color */
+  background-color: #5ada86;
+  color: white;
 }

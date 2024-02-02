@@ -1,18 +1,18 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import TaskPage from './TaskPage'; //imports task
-import HomePage from './HomePage'; // imports home page
-import ActPage from './ActPage' // imports ActPage
-import ContactForm from './ContactForm'; // imports contact page
-import Quiz from './Quiz'; // imports quiz page
-import Quiz_One from './Quiz_One'; // imports quiz page
-import Quiz_Two from './Quiz_Two'; // imports quiz page
-import Quiz_Three from './Quiz_Three'; // imports quiz page
-import Quiz_Four from './Quiz_Four'; // imports quiz page
+import TaskPage from './TaskPage/TaskPage'; //imports task
+import HomePage from './HomePage/HomePage'; // imports home page
+import ActPage from './ActPage/ActPage' // imports ActPage
+import ContactForm from './ContactForm/ContactForm'; // imports contact page
+import Quiz from './AllQuiz/Quiz'; // imports quiz page
+import Quiz_One from './AllQuiz/Quiz_One'; // imports quiz page
+import Quiz_Two from './AllQuiz/Quiz_Two'; // imports quiz page
+import Quiz_Three from './AllQuiz/Quiz_Three'; // imports quiz page
+import Quiz_Four from './AllQuiz/Quiz_Four'; // imports quiz page
 import './App.css'; // CSS for all pages
 import { NavLink } from 'react-router-dom'; //adds hover
 import logo from './Pictures/Angelus_Logo.png';
-import Scenario from './Scenario';
+import Scenario from './Scenario/Scenario';
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
         <div className="header-section">
           <img src={logo} alt="Logo" className="logo" />
           <h1>Angelus</h1>
-          
+
         </div>
         <div className="nav-section">
           <nav>

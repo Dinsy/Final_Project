@@ -41,7 +41,6 @@ const Quiz_Two = () => {
                         : <h3>That's not quite right, Try again!</h3>
                 )}
             </div>
-
         </div>
     );
 };

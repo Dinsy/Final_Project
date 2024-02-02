@@ -46,5 +46,3 @@ const Quiz_One = () => {
 };
 
 export default Quiz_One;
-
-export default Quiz_One;
