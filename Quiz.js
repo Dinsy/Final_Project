@@ -27,12 +27,20 @@ const Quiz = () => {
                 <button onClick={() => handleOptionChange('D')}>D: "Why didn't you tell me sooner? We could have done something about it!"</button>
                 <button onClick={() => handleOptionChange('E')}>E: Change the topic to avoid discussing something so uncomfortable.</button>
             </div>
-            {selectedOption && (
-                isCorrect ?
-                    <p>Well Done, That is Correct!</p> :
-                    <p>That's not quite right, Try again!</p>
-            )}
-
+            <div classname="correct">
+                {selectedOption && (
+                    isCorrect ?
+                        <><h2>Well Done, C is the best approach!</h2>
+                            <h3>Explanation:</h3>
+                            <p>Option C is the best approach as it shows empathy, acknowledges Sarah's feelings, and offers support without imposing your own opinions or solutions. It allows Sarah to express her needs and feelings in a safe and understanding environment.</p>
+                            <h3>Why Other Options Are Not Ideal:</h3>
+                            <p><b>Option A</b> minimises Sarah's experience and imposes unrealistic positivity.</p>
+                            <p><b>Option B</b> overlooks Sarah's current emotional state and jumps into problem-solving mode, which might not be what she needs at the moment.</p>
+                            <p><b>Option D</b> Option D makes the situation about you and adds guilt to her already difficult situation</p>
+                            <p><b>Option E</b> shows a lack of support and willingness to engage in a difficult but necessary conversation.</p></>
+                        : <h3>That's not quite right, Try again!</h3>
+                )}
+            </div>
         </div>
     );
 };
